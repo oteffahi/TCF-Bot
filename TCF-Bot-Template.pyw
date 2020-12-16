@@ -51,7 +51,7 @@ def sendEmail():
 
 	with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
 			server.login(login, password) #connection à la boite gmail d'envoi
-			server.sendmail(TCF-Bot, receiver, message) # envoi de l'email
+			server.sendmail("TCF-Bot", receiver, message) # envoi de l'email
 """*************************************************"""
 s = requests.Session()
 url = 'https://portail.if-algerie.com/'
